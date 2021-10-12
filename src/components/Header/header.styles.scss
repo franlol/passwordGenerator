@@ -1,0 +1,10 @@
+@import 'src/styles/colors';
+@import 'src/styles/fonts';
+
+.header {
+  &__h1 {
+    font: 80px $CevicheOne, cursive;
+    color: $red;
+    text-align: center;
+  }
+}

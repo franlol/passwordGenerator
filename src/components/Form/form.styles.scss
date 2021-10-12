@@ -1,0 +1,15 @@
+@import 'src/styles/colors';
+@import 'src/styles/fonts';
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  color: $grey;
+  font: 26px $Roboto;
+
+  & label {
+    min-width: 320px;
+  }
+}
