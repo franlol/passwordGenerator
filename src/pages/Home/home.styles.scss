@@ -1,25 +1,10 @@
 @import 'src/styles/colors';
 
-.test-1 {
-  background: $space;
-  width: 25%;
-  height: 20px;
-}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  
+  height: 100%;
+  width: 100%;
 
-.test-2 {
-  background: $cold;
-  width: 25%;
-  height: 20px;
-}
-
-.test-3 {
-  background: $grey;
-  width: 25%;
-  height: 20px;
-}
-
-.test-4 {
-  background: $red;
-  width: 25%;
-  height: 20px;
 }

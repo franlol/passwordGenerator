@@ -1,9 +1,9 @@
-import React from 'react'
+import './footer.styles.scss';
 
 export default function Footer() {
   return (
-    <footer>
-      footer
+    <footer className="container footer">
+      With &lt;3 by fran
     </footer>
   )
 }

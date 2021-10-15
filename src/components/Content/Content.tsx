@@ -1,10 +1,9 @@
-import React from 'react'
 import Form from '../Form/Form'
 
 export default function Content() {
 
   return (
-    <main>
+    <main className="container">
       <Form />
     </main>
   )

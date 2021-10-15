@@ -1,0 +1,10 @@
+@import "src/styles/colors";
+@import "src/styles/fonts";
+
+.footer {
+  margin-top: auto;
+
+  font: 18px $Roboto;
+  text-align: center;
+  color: $grey;
+}

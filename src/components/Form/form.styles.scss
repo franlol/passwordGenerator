@@ -1,15 +1,40 @@
-@import 'src/styles/colors';
-@import 'src/styles/fonts';
+@import "src/styles/colors";
+@import "src/styles/fonts";
 
-form {
+.form {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: start;
+  margin: 0 auto;
 
+  width: 380px;
   color: $grey;
   font: 26px $Roboto;
 
   & label {
     min-width: 320px;
+  }
+
+  &__cta {
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  &__button {
+    width: 120px;
+    height: 30px;
+
+    border: 0;
+    background-color: $cold;
+    color: $grey;
+    font: 16px $Roboto;
+    cursor: pointer;
+    border: 1px solid black;
+
+    &:active {
+      border: 1px solid $red;
+    }
   }
 }
