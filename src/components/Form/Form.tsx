@@ -39,6 +39,7 @@ export default function Form() {
     const password = generatePassword(characterList, 24);
 
     setPassowrd(password);
+    console.log(`password`, password)
     navigator.clipboard.writeText(password)
   }
 
