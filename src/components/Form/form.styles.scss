@@ -7,7 +7,6 @@
   align-items: start;
   margin: 0 auto;
 
-  width: 380px;
   color: $grey;
   font: 26px $Roboto;
 
@@ -36,5 +35,9 @@
     &:active {
       border: 1px solid $red;
     }
+  }
+
+  @media only screen and (min-width: 375px) {
+    width: 375px;
   }
 }
