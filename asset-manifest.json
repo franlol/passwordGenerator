@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/passwordGenerator/static/css/main.9609dc1c.chunk.css",
+    "main.css": "/passwordGenerator/static/css/main.9a1f082d.chunk.css",
     "main.js": "/passwordGenerator/static/js/main.e1ea0d21.chunk.js",
     "main.js.map": "/passwordGenerator/static/js/main.e1ea0d21.chunk.js.map",
     "runtime-main.js": "/passwordGenerator/static/js/runtime-main.41504a14.js",
@@ -8,13 +8,13 @@
     "static/js/2.3630967c.chunk.js": "/passwordGenerator/static/js/2.3630967c.chunk.js",
     "static/js/2.3630967c.chunk.js.map": "/passwordGenerator/static/js/2.3630967c.chunk.js.map",
     "index.html": "/passwordGenerator/index.html",
-    "static/css/main.9609dc1c.chunk.css.map": "/passwordGenerator/static/css/main.9609dc1c.chunk.css.map",
+    "static/css/main.9a1f082d.chunk.css.map": "/passwordGenerator/static/css/main.9a1f082d.chunk.css.map",
     "static/js/2.3630967c.chunk.js.LICENSE.txt": "/passwordGenerator/static/js/2.3630967c.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.41504a14.js",
     "static/js/2.3630967c.chunk.js",
-    "static/css/main.9609dc1c.chunk.css",
+    "static/css/main.9a1f082d.chunk.css",
     "static/js/main.e1ea0d21.chunk.js"
   ]
 }
