@@ -5,8 +5,10 @@
   display: flex;
   flex-direction: column;
   align-items: start;
+  
   margin: 0 auto;
-
+  max-width: 350px;
+  
   color: $grey;
   font: 26px $Roboto;
 
@@ -35,9 +37,5 @@
     &:active {
       border: 1px solid $red;
     }
-  }
-
-  @media only screen and (min-width: 375px) {
-    width: 375px;
   }
 }

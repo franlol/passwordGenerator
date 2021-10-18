@@ -18,17 +18,18 @@ body {
 }
 
 .container {
+  box-sizing: border-box;
+  padding: 10px;
+  
   @media only screen and (max-width: 320px) {
-    width: 320px;
-    
-    box-sizing: border-box;
-    padding: 10px;
+    border: 1px solid green;
   }
 
   @media only screen and (max-width: 375px) {
-    width: 375px;
+    border: 1px solid red
+    // width: 375px;
 
-    box-sizing: border-box;
-    padding: 10px;
+    // box-sizing: border-box;
+    // padding: 10px;
   }
 }
