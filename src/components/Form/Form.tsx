@@ -25,7 +25,9 @@ export default function Form() {
     cb2Ref.current!.checked = true;
     cb3Ref.current!.checked = true;
     cb4Ref.current!.checked = true;
-  }, [])
+
+    selectRef.current!.selectedIndex = 6
+  }, []);
 
   const generateClickHandler = (event: MouseEvent) => {
     event.preventDefault();

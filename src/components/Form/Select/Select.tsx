@@ -10,11 +10,11 @@ const Option = (props: TProps<TOption>, selectRef: ForwardedRef<HTMLSelectElemen
     <label htmlFor={id} className='select'>
       {label}
       <select ref={selectRef} className='select__element'>
-        {options.map((option, key) => {
-          return <option key={key} id={`option-${key}`} className='select__option'>
+        {options.map((option, key) =>
+          <option key={key} id={`option-${key}`} className='select__option'>
             {option.value}
           </option>
-        })}
+        )}
       </select>
     </label>
   )
