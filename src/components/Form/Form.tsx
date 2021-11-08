@@ -2,6 +2,7 @@ import { useState, useRef, MouseEvent, useEffect } from 'react';
 import { generateCharactersList, generatePassword } from '../../utils/generator/generator';
 
 import Checkbox from './Checkbox/Checkbox';
+import Option from './Select/Select';
 import Input from './Input/Input';
 
 import './form.styles.scss';
@@ -16,6 +17,7 @@ export default function Form() {
   const cb3Ref = useRef<HTMLInputElement>(null);
   const cb4Ref = useRef<HTMLInputElement>(null);
   const cb5Ref = useRef<HTMLInputElement>(null);
+  const selectRef = useRef<HTMLSelectElement>(null);
   const resultInputRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
@@ -36,11 +38,24 @@ export default function Form() {
       specialChars: cb5Ref.current?.checked || false,
     });
 
-    const password = generatePassword(characterList, 24);
+    const password = generatePassword(characterList, +selectRef.current!.value);
 
     setPassowrd(password);
     navigator.clipboard.writeText(password)
   }
+
+  const options = [
+    { key: '3', value: '3' },
+    { key: '5', value: '5' },
+    { key: '8', value: '8' },
+    { key: '10', value: '10' },
+    { key: '13', value: '13' },
+    { key: '16', value: '16' },
+    { key: '18', value: '18' },
+    { key: '20', value: '20' },
+    { key: '24', value: '24' },
+    { key: '32', value: '32' },
+  ];
 
   return (
     <form className="form">
@@ -49,6 +64,14 @@ export default function Form() {
       <Checkbox id='cb3' label={ELabels.INCLUDE_NUMBERS} value='cb3' ref={cb3Ref} />
       <Checkbox id='cb4' label={ELabels.INCLUDE_SIMBOLS} value='cb4' ref={cb4Ref} />
       <Checkbox id='cb5' label={ELabels.INCLUDE_SPECIAL_CHARS} value='cb5' ref={cb5Ref} />
+
+      <Option
+        id='option'
+        name='characters_length'
+        label={ELabels.CHARS_LIMIT}
+        options={options}
+        ref={selectRef}
+      />
 
       <div className="form__cta">
         <button className="form__button" onClick={generateClickHandler}>Generate</button>

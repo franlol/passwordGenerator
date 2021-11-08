@@ -4,4 +4,6 @@ export enum ELabels {
   INCLUDE_LOWERCASE = 'Include Lowercase',
   INCLUDE_SIMBOLS = 'Include Simbols',
   INCLUDE_SPECIAL_CHARS = 'Include Special Characters',
+
+  CHARS_LIMIT = 'Chars. limit:'
 }
