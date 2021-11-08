@@ -33,7 +33,7 @@ export const generateCharactersList = (flags: TgenerateCharactersListArgs): stri
 
 /**
  * Returns a password, randomly matching the characterList param string .
- * @param characterList String with characters to use when generating the password.
+ * @param characterList String with characters to randomly use when generating the password.
  * @param length Desired length of the password.
  * @returns {String} The password.
  * @example "^0M8Wjsm*i5Dcj9!2#g8ouMC"
