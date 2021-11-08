@@ -1,4 +1,4 @@
-import { ECharactersList, TgenerateCharactersListArgs } from "./generator.types";
+import { ECharactersList, TGenerateCharactersListArgs } from "./generator.types";
 
 /**
  * Return a string with all the characters needed to generate a password.
@@ -11,7 +11,7 @@ import { ECharactersList, TgenerateCharactersListArgs } from "./generator.types"
  * @returns {string} Characters string
  * @example "abcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*"
  */
-export const generateCharactersList = (flags: TgenerateCharactersListArgs): string => {
+export const generateCharactersList = (flags: TGenerateCharactersListArgs): string => {
   const {
     upperCase,
     lowerCase,
