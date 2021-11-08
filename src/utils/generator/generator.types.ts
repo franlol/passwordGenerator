@@ -1,4 +1,4 @@
-export type TgenerateCharactersListArgs = {
+export type TGenerateCharactersListArgs = {
   upperCase: boolean;
   lowerCase: boolean;
   numbers: boolean;
